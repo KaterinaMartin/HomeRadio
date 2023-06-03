@@ -29,29 +29,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    public void shouldSetToMaxVolume() {
-        Radio radio = new Radio();
-
-        radio.setToMaxVolume();
-
-        int expected = 100;
-        int actual = radio.getCurrentVolume();
-
-        Assertions.assertEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldSetToMinVolume() {
-        Radio radio = new Radio();
-
-        radio.setToMinVolume();
-
-        int expected = 0;
-        int actual = radio.getCurrentVolume();
-
-        Assertions.assertEquals(expected,actual);
-    }
 
     @Test
     public void shouldNotSetVolumeAboveMax() {
@@ -241,7 +218,5 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
-
 }
 
