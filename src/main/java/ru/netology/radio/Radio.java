@@ -1,10 +1,5 @@
 package ru.netology.radio;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-
 public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
