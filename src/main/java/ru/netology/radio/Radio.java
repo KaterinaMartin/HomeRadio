@@ -36,7 +36,15 @@ public class Radio {
         }
     }
 
-    public int currentStation;
+    private int maxStation = 9;
+    private int minStation = 0;
+    private int currentStation = maxStation;
+    public Radio () {
+
+    }
+    public Radio (int size) {
+
+    }
 
     public int getCurrentStation() {
         return currentStation;
@@ -55,12 +63,12 @@ public class Radio {
     public void nextStation() {
         if (currentStation < 9) {
             currentStation = currentStation + 1;
-        } else currentStation = 0;
+        } else currentStation = minStation;
     }
 
     public void prevStation() {
         if (currentStation > 0) {
             currentStation = currentStation - 1;
-        } else currentStation = 9;
+        } else currentStation = maxStation;
     }
 }
